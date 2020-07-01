@@ -1,0 +1,109 @@
+.blog {
+    width: 100%;
+    overflow-x: hidden;
+}
+.blog__inner {
+    padding-left: calc((100% - 1310px) / 2 + 65px);
+    padding-bottom: 155px;
+}
+.blog__flex-wrap {
+    flex-wrap: nowrap;
+    @media only screen and(max-width: 800px) {
+        flex-wrap: wrap;
+    }
+}
+.blog__text-wrap {
+    padding: 65px 95px 0 0;
+    @media only screen and(max-width: 1024px) {
+        padding: 65px 20px 0 65px;
+    }
+    @media only screen and(max-width: 1280px) {
+        padding: 65px 20px 0 65px;
+    }
+    @media only screen and(max-width: 800px) {
+        padding-left: 30px;
+    }
+}
+.blog__title {
+    line-height: 1;
+}
+.card__date {
+    color: $date_color;
+    font-size: 14px;
+    margin: 0;
+}
+.blog__text-part {
+    flex: 0 0 30%;
+    min-width: 30%;
+    @media only screen and(max-width: 800px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 100px;
+    }
+    @media only screen and(max-width: 414px) {
+        margin-bottom: 50px;
+    }
+    @media only screen and(max-width: 800px) {
+        margin-bottom: 20px;
+    } 
+}
+.blog__cards-part {
+    flex: 0 0 70%;
+    min-width: 70%;
+    display: flex;
+    @media only screen and(max-width: 800px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.card {
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-right: 22px;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+    @media only screen and(max-width: 1280px) {
+        margin-left: 30px;
+    }
+    &:hover {
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+    }
+}
+.card__img-wrap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 370px;
+    min-height: 275px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    @media only screen and(max-width: 414px) {
+        min-width: 300px;
+    }
+    @media only screen and(max-width: 320px) {
+        min-width: 250px;
+    }
+}
+.card__img-wrap--1 {
+    background-image: url('./assets/images/blog-post-img1.png');
+}
+.card__img-wrap--2 {
+    background-image: url('./assets/images/blog-post-img2.png');
+}
+.card__img-wrap--3 {
+    background-image: url('./assets/images/blog-post-img3.png');
+}
+.card__text-wrap {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 6px 22px 10px 20px;
+}
+.card__title {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.card__paragraph {
+    margin-top: 10px;
+    margin-bottom: 0;
+}

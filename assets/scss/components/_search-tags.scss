@@ -1,0 +1,33 @@
+.search-tags {
+    width: 100%;
+    padding: 125px 0 30px;
+    @media only screen and(max-width: 768px) {
+        padding: 80px 0 30px;   
+    }
+    .row {
+        justify-content: center;
+        align-content: center;
+    }
+}
+.search-tags__inner {
+    .btn {
+        margin-right: 25px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+.btn-wrap {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    &:first-of-type {
+        margin-left: 0;
+    }
+    @media only screen and(max-width: 680px) {
+        margin-left: 0; 
+    }
+}
+.active-btn {
+    background-color: $main_color;
+    color: $secondary_text_color;
+}

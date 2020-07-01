@@ -1,0 +1,46 @@
+.hidden-nav {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center;  
+    background-color: $secondary_text_color;
+    transition: ease-in-out all .5s;
+
+    .navbar__inner {
+        display: block;
+        margin: auto;
+        width: 50%;
+        padding-top: 40vh;
+    }
+    .list-item {
+        font-size: 15px;
+    }
+    .link-item {
+        &:hover {
+            color: $secondary_text_color;
+        }
+    }
+}
+.close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: $main_color;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar-active {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.active {
+    background-image: linear-gradient(to top right, #56bcbb 100%, #21303c 100%);
+}

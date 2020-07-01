@@ -1,0 +1,31 @@
+.slick-prev {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    bottom: 55px;
+    font-size: 30px;
+    color: $main_color;
+    cursor: pointer;
+    right: 125px;
+    bottom: 40px;
+    @media only screen and(max-width: 768px) {
+        right: 50px;
+        bottom: 0;
+    }
+}
+.slick-next {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    bottom: 55px;
+    font-size: 30px;
+    color: $main_color;
+    cursor: pointer;
+    right: 80px;
+    bottom: 40px;
+    @media only screen and(max-width: 768px) {
+        right: 0;
+        bottom: 0;
+    }
+}
